@@ -23,14 +23,8 @@ public class DesafioComponentesApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 
-//		System.out.print("Informe o código do produto: ");
-//		Integer cod = sc.nextInt();
-//		System.out.print("Informe o valor do produto: ");
-//		Double valor = sc.nextDouble();
-//		System.out.print("Informe o desconto: ");
-//		Double disconto = sc.nextDouble();
 
-		Order order = new Order(1034, 150.00, 20.0);
+		Order order = new Order(1034, 200.00, 20.0);
 		System.out.printf("Pedido código %d%nValor Total: R$ %.2f%n", order.getCode(), orderService.total(order));
 
 	}
